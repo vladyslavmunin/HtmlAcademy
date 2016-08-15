@@ -1,0 +1,64 @@
+@import 'reset.less';
+@topbar-text-color:white;
+.lc-mainwrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.topbar{
+    background: slateblue;
+    color: @topbar-text-color;
+    overflow: hidden;
+
+    a {
+        color: @topbar-text-color;
+        text-decoration: none;
+    }
+    li{
+        display: inline-block;
+    }
+}
+.b-logo {
+    float: left;
+      vertical-align: middle;
+       padding: 6px 0;
+}
+.top-menu{
+    float: right;
+
+}
+.nav-links{
+       display: inline-block;
+           vertical-align: middle;
+}
+.b-search{
+background: url(../Img/Core/desctop/icon-search.png) 4px 2px no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-right :@topbar-text-color  2px solid;
+    padding-right: 15px;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+.profile-info{
+   display: inline-block;
+   &:after{
+   content:'' ;
+   width:0;
+   height: 0;
+   border-style: solid;
+   border-width: 8px 5px 0 5px;
+   border-color: @topbar-text-color transparent transparent transparent;
+   display: inline-block;
+   margin-left: 10px;
+ }
+}
+.top-nav-link{
+     display: inline-block; 
+    vertical-align: middle;
+     padding: 6px 10px;
+    &:hover{
+        color:darken(white,20%);
+    }
+}
